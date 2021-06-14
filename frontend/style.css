@@ -1,0 +1,16 @@
+#mytable{
+    background-color: #212128;
+    color: white;
+    text-align: center;
+    width: 900px;
+    margin-top: 265px;
+    margin-left: 20%;
+}
+body{
+    background-image: url("../image/background.jpg");
+    display: flex;
+
+}
+ #mytable th,td  {
+    text-align: center;
+}
