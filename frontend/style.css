@@ -32,3 +32,9 @@ body .file-upload-button {
     width: 20px;
     height: 20px;
 }
+.folder-input {
+    color: black;
+}
+.upload-file {
+    color: lightcyan;
+}

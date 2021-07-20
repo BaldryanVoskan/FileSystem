@@ -8,7 +8,7 @@
 
     ?>
         <form action="../poorcode/uploadfile.php <?php echo($upload); ?>" method="post" enctype="multipart/form-data">
-            <input type="file" name="file">
+            <input type="file" name="file" class="upload-file">
             <input type="submit" value="Upload File" name="button">
         </form>
              <!--here is going table-->
@@ -55,9 +55,9 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title text-success" id="exampleModalLabel">Folder Name</h5>
+                                            <h5 class="modal-title text-dark" id="exampleModalLabel">Folder Name</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
+                                                <span aria-hidden="true">&times;</span>git
                                             </button>
                                         </div>
                                         <div class="modal-body">
@@ -68,7 +68,7 @@
 
                                             <form action="../poorcode/rename.php <?php echo $name; ?>" method="post">
                                                 <input type="hidden" value="<?php echo ($value['name']); ?>" name="old_name">
-                                                <input type="text" placeholder="Enter New Name" class="text-dark" name="new_name">
+                                                <input type="text" placeholder="Enter New Name" class="folder-input" name="new_name">
                                                 <input type="submit" value="Save" class="btn btn-warning">
                                             </form>
                                         </div>
