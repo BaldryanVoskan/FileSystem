@@ -11,5 +11,3 @@
                 header("Location: ../index.php?page=". $_POST['folder_name']);
             }
         }
-
-

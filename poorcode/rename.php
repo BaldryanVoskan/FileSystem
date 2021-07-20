@@ -1,7 +1,6 @@
 <?php
 
 $mydir = '../folders/';
-
 if (isset($_GET['name'])) {
     $mydir = $mydir . $_GET['name'];
 }
@@ -27,3 +26,5 @@ if (empty($_POST['new_name'])) {
 } else {
     header("Location:../index.php?page=" . $_GET['name']);
 }
+
+

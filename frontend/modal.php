@@ -1,7 +1,7 @@
                                         <!-- Modal of folder -->
 
     <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><img src="../image/folder.jpg" style="width: 20px; height: 20px;" /></button>
+    <button type="button" class="file-upload-button btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><img src="../image/folder.jpg" class="image"/></button>
 
     <!-- Modal  -->
     <div id="myModal" class="modal fade" role="dialog">

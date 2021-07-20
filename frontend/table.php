@@ -1,13 +1,15 @@
                         <!-- here is going form of uploadfile.php-->
     <?php
+    include './poorcode/helper.php';
             $upload = '';
             if(isset($_GET['page'])){
                 $upload ='?upload='. $_GET['page'];
             }
+
     ?>
         <form action="../poorcode/uploadfile.php <?php echo($upload); ?>" method="post" enctype="multipart/form-data">
             <input type="file" name="file">
-            <input type="submit" value="submit" name="button">
+            <input type="submit" value="Upload File" name="button">
         </form>
              <!--here is going table-->
         <table id="mytable">
@@ -20,11 +22,7 @@
             </tr>
             <?php
                     if(isset($arr)){
-                        function sortFunction ($items, $column = 'name', $type = SORT_ASC){
-                            // Sorting logic
-                      array_multisort( array_column($items, $column), (int)$type, $items );
-                            return $items;
-                        }
+
                         if(isset($_GET['column']) && isset($_GET['type'])){
                             $column = $_GET['column'];
                             $type = $_GET['type'];
@@ -70,12 +68,12 @@
 
                                             <form action="../poorcode/rename.php <?php echo $name; ?>" method="post">
                                                 <input type="hidden" value="<?php echo ($value['name']); ?>" name="old_name">
-                                                <input type="text" placeholder="Enter New Folder Name" class="text-success" name="new_name">
-                                                <input type="submit" value="Save">
+                                                <input type="text" placeholder="Enter New Name" class="text-dark" name="new_name">
+                                                <input type="submit" value="Save" class="btn btn-warning">
                                             </form>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                                         </div>
                                     </div>
                                 </div>
